@@ -4,22 +4,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tribute Page for Marcus Aurelius</title>
+    <title>freeCodeCamp Survey Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 </head>
 <body>
     <style>
 
+        * {
+            box-sizing: border-box
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: #ecf0f1;
+            text-align: center;
+        }
+        body {
+            background-color: #54a0ff;
+            font-family: 'Nunito', sans-serif;
+            color: #ecf0f1;
+            text-align: center;
+            margin: 0;
+        }
+
+        form {
+            background-color: #c8d6e5;
+            color: #222f3e;
+            max-width: 450px;
+            margin: 0 auto;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+            padding: 30px 20px;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .form-control input {
+            display: block;
+            border: 1px solid #777;
+            border-radius: 4px;
+            font-family: inherit;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+
+        
     </style>
     <header>
+        <h1 id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
 
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age" />
+            </div>
+        </form>
+        
     </header>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
