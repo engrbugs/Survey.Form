@@ -50,7 +50,7 @@
             margin-bottom: 6px;
         }
 
-        .form-control input {
+        .form-control input, .form-control select {
             display: block;
             border: 1px solid #777;
             border-radius: 4px;
@@ -60,8 +60,11 @@
             font-size: 16px;
         }
 
+        .form-control input[type="radio"] {
+            display: inline-block;
+            width: auto;
+        }
 
-        
     </style>
     <header>
         <h1 id="title">
@@ -70,23 +73,49 @@
         <p id="description">
             Thank you for taking the time to help us improve the platform
         </p>
-
-        <form id="survey-form">
-            <div class="form-control">
-                <label for="name" id="label-name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" />
-            </div>
-            <div class="form-control">
-                <label for="email" id="label-email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" />
-            </div>
-            <div class="form-control">
-                <label for="age" id="label-age">Age</label>
-                <input type="number" id="age" placeholder="Enter your age" />
-            </div>
-        </form>
-        
     </header>
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">Which option best describes your current role?</label>
+            <select name="role" id="role">
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label for="recommend-1"><input type="radio" id="recommend-1"/>
+                Definitely
+            </label>
+            <label for="recommend-2"><input type="radio" id="recommend-3"/>
+                Maybe
+            </label>
+            <label for="recommend-3"><input type="radio" id="recommend-3"/>
+                Not Sure
+            </label>
+
+        </div>
+    </form>
+
+
+
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
